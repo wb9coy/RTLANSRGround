@@ -1,0 +1,12 @@
+[Unit]
+Description=RTL ANSR Ground Service
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+WorkingDirectory=/home/pi/RTLANSRGround
+ExecStart=/usr/bin/python3 RTLANSRGround.py
+
+[Install]
+WantedBy=multi-user.target
